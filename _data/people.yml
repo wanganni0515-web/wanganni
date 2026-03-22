@@ -36,10 +36,6 @@ kedeng:
     role: grad
     image: /wanganni/img/people/kedeng.jpg
 
-storm:
-    display_name: "虚位以待  We need you!"
-    role: grad
-    image: /img/people/need.png
 
 
 
