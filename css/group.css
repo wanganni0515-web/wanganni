@@ -82,6 +82,7 @@ ul.news > li {
 }
 
 #people > h2,
+#people h2,
 section h2 {
   color: #fff !important;
   background: #3a6ea5 !important;
