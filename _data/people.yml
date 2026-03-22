@@ -30,11 +30,13 @@ bizhu:
     display_name: "张碧竹 Bizhu Zhang"
     role: grad
     image: /wanganni/img/people/bizhu.jpg
+    bio: SLICES逆向设计 · 生成式AI for Crystal Structures
 
 kedeng:
     display_name: "吴克登 Kedeng Wu"
     role: grad
     image: /wanganni/img/people/kedeng.jpg
+    bio: Text2Crystal · 晶体性质预测 · Machine Learning
 
 
 
