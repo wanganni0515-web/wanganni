@@ -121,6 +121,16 @@ section h2 {
     .bio {
         color: $blue-gray;
     }
+
+    .role.grad {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        > .person {
+            flex: 0 0 auto;
+        }
+    }
 }
 
 /* Profile images */
@@ -193,7 +203,6 @@ svg {
 }
 
 @media (min-width: 768px) {
-    .role.grad      { column-count: 2 }
     .project-people { column-count: 3 }
     .card-columns   { column-count: 3 }
 }

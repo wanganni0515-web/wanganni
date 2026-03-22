@@ -102,6 +102,14 @@ section h2 {
 #people .bio {
   color: #6b8cae;
 }
+#people .role.grad {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#people .role.grad > .person {
+  flex: 0 0 auto;
+}
 
 /* Profile images */
 .profile {
@@ -176,9 +184,6 @@ svg {
   }
 }
 @media (min-width: 768px) {
-  .role.grad {
-    column-count: 2;
-  }
   .project-people {
     column-count: 3;
   }
