@@ -1,0 +1,188 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  color: #2c3e50;
+}
+
+.header {
+  border-bottom: 3px solid #1a4b7c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer {
+  color: #6b8cae;
+  border-top: 2px solid #dce8f5;
+  text-align: center;
+  font-size: 0.85em;
+  padding-top: 1.5rem;
+}
+.footer a:link, .footer a:visited {
+  color: #3a6ea5;
+}
+.footer a:hover {
+  color: #1a4b7c;
+}
+
+a {
+  color: #3a6ea5;
+}
+a:hover {
+  color: #1a4b7c;
+}
+
+.fa {
+  color: #6b8cae;
+}
+
+a > .fa {
+  display: inline;
+}
+
+/* Jumbotron */
+.jumbotron {
+  text-align: justify;
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  font-size: 125%;
+  background: #eef5fb;
+  border-left: 4px solid #1a4b7c;
+  border-radius: 4px;
+  padding-left: 1.5rem;
+}
+
+/* Group logo */
+#logo {
+  width: 600px;
+  height: auto;
+  margin: 2px 0 2px 0;
+}
+
+/* Navigation */
+.nav-pills .nav-link {
+  color: #1a4b7c;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+  background-color: #1a4b7c;
+  color: white;
+}
+
+/* Front page news */
+ul.news .date {
+  color: #6b8cae;
+  font-weight: bold;
+}
+ul.news > li {
+  margin-top: 1em;
+  padding-left: 0.5rem;
+  border-left: 2px solid #dce8f5;
+}
+
+section h2 {
+  color: #1a4b7c;
+  border-bottom: 2px solid #dce8f5;
+  padding-bottom: 0.3rem;
+}
+
+/* People section */
+#people .person-name {
+  color: #1a4b7c;
+  font-weight: 600;
+}
+#people .bio {
+  color: #6b8cae;
+}
+
+/* Profile images */
+.profile {
+  object-fit: cover;
+  border: 2px solid #dce8f5;
+}
+
+.noprofile circle {
+  fill: #dce8f5;
+}
+.noprofile text {
+  font-weight: 700;
+  fill: white;
+}
+
+.card {
+  border: 1px solid #dce8f5;
+}
+.card .card-header {
+  background-color: #eef5fb;
+  color: #1a4b7c;
+}
+.card .profile {
+  height: 40px;
+  width: 40px;
+  margin: 3px;
+}
+.card .card-footer {
+  padding: 0.5em;
+}
+
+.person {
+  margin-bottom: 10px;
+}
+.person .profile {
+  height: 70px;
+  width: 70px;
+}
+.person .bio {
+  color: #6b8cae;
+}
+.person .person-name {
+  margin: 0;
+}
+
+.person-without-image {
+  margin: 0;
+}
+.person-without-image .bio {
+  margin-left: 1em;
+}
+
+/* Videos section */
+#videos {
+  background: #eef5fb;
+}
+#videos h2 {
+  color: #1a4b7c;
+  border-bottom: none;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+@media (min-width: 576px) {
+  .project-people {
+    column-count: 2;
+  }
+  .card-columns {
+    column-count: 2;
+  }
+}
+@media (min-width: 768px) {
+  .role.grad {
+    column-count: 2;
+  }
+  .project-people {
+    column-count: 3;
+  }
+  .card-columns {
+    column-count: 3;
+  }
+}
+.title img {
+  max-width: 60%;
+}
+
+section {
+  margin-bottom: 2em;
+}

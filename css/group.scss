@@ -1,54 +1,66 @@
 ---
 ---
 
-$gray: #999;
-$light-gray: #EEE;
+$primary-blue: #1a4b7c;
+$medium-blue: #3a6ea5;
+$light-blue: #dce8f5;
+$lighter-blue: #eef5fb;
+$blue-gray: #6b8cae;
+$light-gray: #f0f4f8;
 
 /* Space out content a bit */
 body {
     padding-top: 20px;
+    color: #2c3e50;
 }
 
 .header {
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 3px solid $primary-blue;
     padding-bottom: 10px;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .footer {
-    /* padding-top: 19px; */
-    color: $gray;
-    border-top: 1px solid $light-gray;
+    color: $blue-gray;
+    border-top: 2px solid $light-blue;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.85em;
+    padding-top: 1.5rem;
 
     a:link, a:visited {
-        color: $gray;
+        color: $medium-blue;
+    }
+
+    a:hover {
+        color: $primary-blue;
+    }
+}
+
+a {
+    color: $medium-blue;
+    &:hover {
+        color: $primary-blue;
     }
 }
 
 .fa {
-    color: $gray;
+    color: $blue-gray;
 }
 a > .fa {
-    // make sure that font-awesome icons are underlined in links
     display: inline;
 }
-
-/* /\* Customize container *\/ */
-/* @media (min-width: 768px) { */
-/*     .container { */
-/*         max-width: 730px; */
-/*     } */
-/* } */
 
 /* Jumbotron */
 .jumbotron {
     text-align: justify;
     padding-top: 1.5em;
     padding-bottom: 0.5em;
-    font-size: 125%
+    font-size: 125%;
+    background: $lighter-blue;
+    border-left: 4px solid $primary-blue;
+    border-radius: 4px;
+    padding-left: 1.5rem;
 }
 
 /* Group logo */
@@ -58,17 +70,113 @@ a > .fa {
     margin: 2px 0 2px 0;
 }
 
-/* Front page news. */
-ul.news {
+/* Navigation */
+.nav-pills .nav-link {
+    color: $primary-blue;
+    border-radius: 20px;
+    font-weight: 500;
 
+    &.active,
+    &:hover {
+        background-color: $primary-blue;
+        color: white;
+    }
+}
+
+/* Front page news */
+ul.news {
     .date {
-        color: $gray;
+        color: $blue-gray;
         font-weight: bold;
     }
 
     > li {
         margin-top: 1em;
+        padding-left: 0.5rem;
+        border-left: 2px solid $light-blue;
     }
+}
+
+section h2 {
+    color: $primary-blue;
+    border-bottom: 2px solid $light-blue;
+    padding-bottom: 0.3rem;
+}
+
+/* People section */
+#people {
+    .person-name {
+        color: $primary-blue;
+        font-weight: 600;
+    }
+
+    .bio {
+        color: $blue-gray;
+    }
+}
+
+/* Profile images */
+.profile {
+    object-fit: cover;
+    border: 2px solid $light-blue;
+}
+
+.noprofile {
+    circle {
+        fill: $light-blue;
+    }
+    text {
+        font-weight: 700;
+        fill: white;
+    }
+}
+
+.card {
+    border: 1px solid $light-blue;
+    .card-header {
+        background-color: $lighter-blue;
+        color: $primary-blue;
+    }
+    .profile {
+        height: 40px;
+        width: 40px;
+        margin: 3px;
+    }
+    .card-footer { padding: 0.5em }
+}
+
+.person {
+    margin-bottom: 10px;
+    .profile {
+        height: 70px;
+        width: 70px;
+    }
+    .bio {
+        color: $blue-gray;
+    }
+    .person-name {
+        margin: 0;
+    }
+}
+
+.person-without-image {
+    margin: 0;
+    .bio {
+        margin-left: 1em;
+    }
+}
+
+/* Videos section */
+#videos {
+    background: $lighter-blue;
+    h2 {
+        color: $primary-blue;
+        border-bottom: none;
+    }
+}
+
+svg {
+    vertical-align: middle;
 }
 
 @media (min-width: 576px) {
@@ -88,60 +196,4 @@ ul.news {
 
 section {
     margin-bottom: 2em;
-}
-
-.profile {
-    object-fit: cover; // makes sure it's cropped
-}
-
-.noprofile {
-    circle {
-        fill: $light-gray;
-    }
-    text {
-        font-weight: 700;
-        fill: white;
-    }
-}
-
-.card {
-
-    .profile {
-        height: 40px;
-        width: 40px;
-        margin: 3px;
-    }
-
-    .card-footer { padding: 0.5em }
-}
-
-.person {
-
-    margin-bottom: 10px;
-
-    .profile {
-        height: 70px;
-        width: 70px;
-    }
-
-    .bio {
-        color: $gray;
-    }
-
-    .person-name {
-        margin: 0;
-    }
-}
-
-.person-without-image {
-    margin: 0;
-
-    .bio {
-        margin-left: 1em;
-    }
-}
-
-svg {
-    // make the alignment just like img from bootstrap's reboot.scss
-    vertical-align: middle;
 }
