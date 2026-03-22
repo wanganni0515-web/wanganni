@@ -83,7 +83,8 @@ ul.news > li {
 
 /* People section */
 #people > h2,
-#people h2 {
+#people h2,
+section h2 {
   color: #fff !important;
   background: #3a6ea5 !important;
   padding: 0.4rem 1rem !important;
